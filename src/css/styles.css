@@ -20,7 +20,7 @@
     }
 
     .main_container{
-        @apply h-[100vh] w-1/4 home relative flex flex-col justify-center items-center max-sm:w-1/2 max-md:w-1/3
+        @apply h-[85vh] w-1/4 home relative flex flex-col justify-center items-center max-sm:w-1/2 max-md:w-1/3
     }
 
     .topic{

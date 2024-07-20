@@ -1,0 +1,54 @@
+@import url(bg_animations.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@layer components{
+    .register-btn{
+        @apply bg-pink-400 rounded-full py-2 px-4 text-white transition-all hover:bg-pink-500 active:bg-pink-600;
+    }
+
+    .header{
+        @apply h-[15vh] flex flex-1 justify-around items-center py-8 px-8 border-b-2 border-b-pink-200;
+    }
+
+    .topic{
+        position: relative;
+    }
+
+    .topic::after{
+        content: "";
+        background-color: rgb(255, 174, 188);
+        display: block;
+        position: absolute;
+        width: 3rem;
+        height: .2rem;
+        border-radius: 1rem;
+
+        z-index: -1;
+        transition: transform 300ms ease;
+        transform-origin: right;
+        transform: scaleX(0);
+    }
+
+    .topic:hover::after{
+        transform: scale(1);
+        transform-origin: left;
+    }
+
+    .topicCon::after{
+        width: 4.3rem;
+    }
+
+    .home{
+        background: linear-gradient(to bottom, rgb(255, 133, 153), pink);
+    }
+}

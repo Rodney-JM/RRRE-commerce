@@ -1,3 +1,4 @@
+@import url(home_page.css);
 @import url(bg_animations.css);
 @import url(reset.css);
 
@@ -7,7 +8,7 @@
 
 @layer components{
     .register-btn{
-        @apply bg-pink-400 rounded-full py-2 px-4 text-white transition-all hover:bg-pink-500 active:bg-pink-600;
+        @apply bg-roseClar2 rounded-full py-2 px-4 text-white transition-all hover:bg-roseNorm active:bg-roseEsc2;
     }
 
     .header{
@@ -15,7 +16,7 @@
     }
 
     .main_title{
-        @apply font-montserrat text-7xl overflow-visible text-center font-medium text-gray-900 absolute
+        @apply font-montserrat text-7xl overflow-visible text-center font-semibold text-roseEsc absolute
         z-20 max-sm:text-5xl max-md:text-6xl max-xl:text-6xl py-8
     }
 
@@ -25,34 +26,5 @@
 
     .topic{
         position: relative;
-    }
-
-    .topic::after{
-        content: "";
-        background-color: rgb(255, 174, 188);
-        display: block;
-        position: absolute;
-        width: 3rem;
-        height: .2rem;
-        border-radius: 1rem;
-
-        z-index: -1;
-        transition: transform 300ms ease;
-        transform-origin: right;
-        transform: scaleX(0);
-    }
-
-    .topic:hover::after{
-        transform: scale(1);
-        transform-origin: left;
-    }
-
-    .topicCon::after{
-        width: 4.3rem;
-    }
-
-    .home{
-        background: linear-gradient(to bottom, rgb(255, 133, 153), pink);
-        z-index: 10;
     }
 }

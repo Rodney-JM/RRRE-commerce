@@ -8,11 +8,15 @@ module.exports = {
         "palanquin":["Palanquin", "sans-serif"]
       },
       colors:{
-        "redS": "#BD2A2E",
         "blackS": "#3B3936",
         "white1": "#B2BEBF",
         "white2": "#889C9B",
-        "white3": "#486966"
+        "white3": "#486966",
+        "roseEsc": "#26010B",
+        "roseEsc2": "#59023B",
+        "roseNorm": "#BF045B",
+        "roseClar": "#F28DCF",
+        "roseClar2": "#BF3F92"
       }
     },
   },

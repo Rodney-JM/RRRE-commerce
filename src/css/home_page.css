@@ -1,0 +1,66 @@
+@import url(colors.css);
+
+section{
+    position: relative;
+}
+
+.topic::after{
+    content: "";
+    background-color: rgb(255, 174, 188);
+    display: block;
+    position: absolute;
+    width: 3rem;
+    height: .2rem;
+    border-radius: 1rem;
+
+    z-index: -1;
+    transition: transform 300ms ease;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+.topic:hover::after{
+    transform: scale(1);
+    transform-origin: left;
+}
+
+.topicCon::after{
+    width: 4.3rem;
+}
+
+.home{
+    background: linear-gradient(to bottom, rgb(255, 133, 153), rgb(255, 255, 255));
+    z-index: 10;
+    margin-bottom: 60px;
+}
+
+.curve{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    bottom: 0;
+}
+
+.curve::before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background: var(--rose-Esc2);
+    transform: translate(85%, 60%);
+    z-index: 20;
+}
+
+.curve::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background: white;
+    transform: translate(-4%, 40%);
+    z-index: 10;
+}

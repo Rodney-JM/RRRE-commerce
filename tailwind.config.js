@@ -16,7 +16,8 @@ module.exports = {
         "roseEsc2": "#59023B",
         "roseNorm": "#BF045B",
         "roseClar": "#F28DCF",
-        "roseClar2": "#BF3F92"
+        "roseClar2": "#BF3F92",
+        "roseClar3":"#ffafe3"
       }
     },
   },

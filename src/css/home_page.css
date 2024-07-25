@@ -46,9 +46,9 @@ section{
     display: block;
     position: absolute;
     border-radius: 100% 50%;
-    width: 55%;
+    width: 60%;
     height: 100%;
-    background: var(--rose-Esc2);
+    background: var(--rose-Clar3);
     transform: translate(85%, 60%);
     z-index: 20;
 }
@@ -58,9 +58,13 @@ section{
     display: block;
     position: absolute;
     border-radius: 100% 50%;
-    width: 55%;
+    width: 60%;
     height: 100%;
     background: white;
     transform: translate(-4%, 40%);
     z-index: 10;
+}
+
+.perfumes{
+    background: radial-gradient(circle,white 0%, var(--rose-Clar3) 30%, var(--rose-Clar3) 100%);
 }

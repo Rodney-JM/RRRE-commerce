@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./dist/styles.css">
 </head>
 <body>
@@ -83,7 +86,8 @@
         <section class="flex flex-col items-center justify-between">
             <h1 class="main_title">Shop the <br>best perfumes</h1>
             <div class="main_container">
-                <a href="products.html" class="bg-pink-800 py-4 px-8 text-white text-xl mt-[70px] 
+                <a href="products.html" class="bg-pink-800 py-4 px-8 text-white text-xl mt-[70px]
+                max-sm:mt-[100px] 
                 transition-all hover:bg-pink-900">
                     Buy now
                 </a>
@@ -92,14 +96,26 @@
             </div>
             <div class="curve"></div>
         </section>
-        <section id="about" class="h-screen bg-roseEsc2 w-screen flex items-center justify-between px-[5%]">
-            <div class="flex flex-col items-start w-[40%]">
-                <h1 class="main_title relative text-roseClar">About</h1>
-                <div class="h-2 w-56 bg-rose-200 -mt-4 rounded-sm"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam quam rerum eius porro suscipit ad nam dolor laudantium, at quaerat velit autem vel animi similique molestias recusandae quos deserunt?</p>
+        <section id="about" class="h-[875px] max-md:h-[1100px] bg-roseClar3 w-screen flex items-center justify-evenly px-[5%] max-md:flex-col ">
+            <div class="flex flex-col items-start w-[40%] max-md:w-[100%] space-y-[5%]">
+                <div class="max-md:mx-auto">
+                <h1 class="main_title relative text-roseEsc2 text-6xl py-4">About</h1>
+                <div class="h-2 w-56 bg-roseEsc -mt-4 rounded-sm"></div>
+                </div>
+                <p class="text-xl font-montserrat leading-10 max-md:text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam quam rerum eius porro suscipit ad nam dolor laudantium, at quaerat velit autem vel animi similique molestias recusandae quos deserunt?</p>
+                <ul class="flex justify-evenly 
+                items-center w-full text-4xl">
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li><i class="fa-brands fa-github"></i></li>
+                </ul>
+
+                <a href="email_send.html" class="text-2xl mx-auto bg-roseEsc2 px-10 py-3 rounded-sm text-palanquin text-white hover:bg-roseEsc">Enviar um email</a>
+
+                <img src="./src/assets/images/Deus_Grego.png" alt="Deus Grego" class="absolute bottom-0 right-0 max-md:hidden">
             </div>
             <div>
-                s
+                <img src="./src/assets/images/perfums.png" alt="Perfumes" class="perfumes max-md:w-[70%] max-md:mx-auto">
             </div>
         </section>
     </main>  

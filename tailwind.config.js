@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html, js}", "index.html"],
+  content: ["./src/**/*.{html, js}", "index.html", "register.html"],
   theme: {
     extend: {
       fontFamily:{
@@ -17,7 +17,8 @@ module.exports = {
         "roseNorm": "#BF045B",
         "roseClar": "#F28DCF",
         "roseClar2": "#BF3F92",
-        "roseClar3":"#ffafe3"
+        "roseClar3":"#ffafe3",
+        "#rose": "#FF8599"
       }
     },
   },

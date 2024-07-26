@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RRRecommerce - Register_Page</title>
+
+
+    <!-- Font importadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./dist/styles.css">
 </head>
 <body>
-    
+    <main class="h-screen flex justify-evenly bg-black">
+        <section>
+            <img src="./src/assets/images/perfume_registerpg2.jfif" alt="Perfume" class="bg-cover w-[70%] my-8 mx-auto rounded-sm">
+        </section>
+        <section>
+            <div>
+                <h2>Create an Account</h2>
+                <p>Already have an account? <a href="login.html">Log in</a></p>
+
+                <form action="">
+                    <div>
+                        <input type="text" name="first_name" placeholder="First name">
+                        <input type="text" name="last_name" placeholder="Last name">
+                    </div>
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="password" name="password" placeholder="Enter your password">
+                    <button type="submit">
+                        Create account
+                    </button>
+                    <div>
+                        <div class="line"></div>
+                        <p>or register with</p>
+                        <div class="line"></div>
+                    </div>
+                    <div>
+                        <a href="">
+                            <i class="fa-brands fa-google"></i>
+                            Google
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

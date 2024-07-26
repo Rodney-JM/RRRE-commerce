@@ -48,7 +48,7 @@ section{
     border-radius: 100% 50%;
     width: 60%;
     height: 100%;
-    background: var(--rose-Clar3);
+    background: var(--rose);
     transform: translate(85%, 60%);
     z-index: 20;
 }
@@ -62,9 +62,9 @@ section{
     height: 100%;
     background: white;
     transform: translate(-4%, 40%);
-    z-index: 10;
+    z-index: 11;
 }
 
 .perfumes{
-    background: radial-gradient(circle,white 0%, var(--rose-Clar3) 30%, var(--rose-Clar3) 100%);
+    background: radial-gradient(circle,white 0%, var(--rose) 30%, var(--rose) 100%);
 }

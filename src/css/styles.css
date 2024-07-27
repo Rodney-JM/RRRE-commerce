@@ -25,7 +25,7 @@
     }
 
     .buy_button{
-        @apply register-btn text-xl py-4 px-10 m-4 rounded-sm;
+        @apply register-btn text-xl py-4 px-10 m-4 rounded-sm max-sm:text-lg text-nowrap;
     }
 
     .email_button{
@@ -38,5 +38,24 @@
 
     .topic{
         position: relative;
+    }
+}
+
+
+@layer utilities{
+    .input{
+        @apply bg-registerInputElements py-3 px-6 rounded-md placeholder:text-white4;
+    }
+
+    .input_half{
+        @apply input w-[46.5%]
+    }
+
+    .line{
+        @apply bg-gray-500 h-[2px] w-[33%] 
+    }
+
+    .register_method{
+        @apply flex items-center justify-center text-white1 px-12 py-3 border-2 border-white2 rounded-md max-sm:px-6
     }
 }

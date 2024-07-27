@@ -17,37 +17,39 @@
     <link rel="stylesheet" href="./dist/styles.css">
 </head>
 <body>
-    <main class="h-screen flex justify-evenly bg-black">
+    <main class="flex justify-evenly bg-registerBg max-md:flex-col h-screen max-md:h-[1250px] w-full">
         <section>
-            <img src="./src/assets/images/perfume_registerpg2.jfif" alt="Perfume" class="bg-cover w-[70%] my-8 mx-auto rounded-sm">
+            <img src="./src/assets/icons/logotype (2).png" alt="Perfume" class="bg-cover w-[500px] my-14 mx-auto rounded-sm max-md:my-0">
         </section>
-        <section>
-            <div>
-                <h2>Create an Account</h2>
-                <p>Already have an account? <a href="login.html">Log in</a></p>
+        <section class="flex flex-col justify-center items-center p-4">
+            <div class="flex flex-col space-y-4">
+                <div class="flex flex-col space-y-4 mb-8">
+                    <h2 class="text-5xl font-montserrat text-white1 font-medium text-nowrap max-sm:text-4xl">Create an Account</h2>
+                    <p class="font-montserrat text-white2">Already have an account? <a href="login.html">Log in</a></p>
+                </div>
 
-                <form action="">
-                    <div>
-                        <input type="text" name="first_name" placeholder="First name">
-                        <input type="text" name="last_name" placeholder="Last name">
+                <form action="" class="flex flex-col mx-auto space-y-6 w-[93%]">
+                    <div class="space-x-[5%]">
+                        <input type="text" name="first_name" placeholder="First name" class="input_half">
+                        <input type="text" name="last_name" placeholder="Last name" class="input_half">
                     </div>
-                    <input type="email" name="email" placeholder="Email">
-                    <input type="password" name="password" placeholder="Enter your password">
-                    <button type="submit">
+                    <input type="email" name="email" placeholder="Email" class="input">
+                    <input type="password" name="password" placeholder="Enter your password" class="input">
+                    <button type="submit" class="text-lg bg-Esc2 text-white1 py-2 rounded-md transition-all hover:bg-Esc active:bg-blue-900">
                         Create account
                     </button>
-                    <div>
+                    <div class="flex justify-between items-center">
                         <div class="line"></div>
-                        <p>or register with</p>
+                        <p class="text-gray-400 text-sm font-palanquin ">Or register with</p>
                         <div class="line"></div>
                     </div>
-                    <div>
-                        <a href="">
-                            <i class="fa-brands fa-google"></i>
+                    <div class="flex justify-evenly">
+                        <a href="" class="register_method">
+                            <img src="./src/assets/icons/logo_google.png" alt="Google logotype" class="w-10">
                             Google
                         </a>
-                        <a href="">
-                            <i class="fa-brands fa-instagram"></i>
+                        <a href="" class="register_method">
+                            <img src="./src/assets/icons/insta_logo.png" alt="Instagram logotype" class="w-11">
                             Instagram
                         </a>
                     </div>

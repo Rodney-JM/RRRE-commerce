@@ -46,7 +46,7 @@ section{
     display: block;
     position: absolute;
     border-radius: 100% 50%;
-    width: 60%;
+    width: 55%;
     height: 100%;
     background: var(--Clar2);
     transform: translate(85%, 60%);
@@ -58,7 +58,7 @@ section{
     display: block;
     position: absolute;
     border-radius: 100% 50%;
-    width: 60%;
+    width: 55%;
     height: 100%;
     background: white;
     transform: translate(-4%, 40%);

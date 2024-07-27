@@ -1,13 +1,10 @@
 :root {
     --black-1: #3B3936;
-    --white-1: #B2BEBF;
+    --white-1: #F2F2F2;
     --white-2: #889C9B;
     --white-3: #486966;
-    --rose-Esc: #26010B;
-    --rose-Esc2: #59023B;
-    --rose-Norm: #BF045B;
-    --rose-Clar: #F28DCF;
-    --rose-Clar2: #BF3F92;
-    --rose-Clar3: #ffafe3;
-    --rose: #FF8599;
+    --Esc: #4951F2;
+    --Esc2: #5C73F2;
+    --Clar: #7E8FF2;
+    --Clar2: #BBC3F2;
 }

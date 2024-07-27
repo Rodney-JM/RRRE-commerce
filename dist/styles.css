@@ -1,15 +1,12 @@
 :root {
   --black-1: #3B3936;
-  --white-1: #B2BEBF;
+  --white-1: #F2F2F2;
   --white-2: #889C9B;
   --white-3: #486966;
-  --rose-Esc: #26010B;
-  --rose-Esc2: #59023B;
-  --rose-Norm: #BF045B;
-  --rose-Clar: #F28DCF;
-  --rose-Clar2: #BF3F92;
-  --rose-Clar3: #ffafe3;
-  --rose: #FF8599;
+  --Esc: #4951F2;
+  --Esc2: #5C73F2;
+  --Clar: #7E8FF2;
+  --Clar2: #BBC3F2;
 }
 
 section{
@@ -18,7 +15,7 @@ section{
 
 .topic::after{
   content: "";
-  background-color: rgb(255, 174, 188);
+  background-color: var(--Esc);
   display: block;
   position: absolute;
   width: 3rem;
@@ -40,8 +37,8 @@ section{
 }
 
 .home{
-  background: linear-gradient(to bottom, rgb(255, 133, 153), rgb(255, 255, 255));
-  z-index: 10;
+  background: linear-gradient(to bottom,var(--Esc2), white);
+  z-index: 12;
   margin-bottom: 60px;
 }
 
@@ -59,7 +56,7 @@ section{
   border-radius: 100% 50%;
   width: 60%;
   height: 100%;
-  background: var(--rose);
+  background: var(--Clar2);
   transform: translate(85%, 60%);
   z-index: 20;
 }
@@ -77,7 +74,7 @@ section{
 }
 
 .perfumes{
-  background: radial-gradient(circle,white 0%, var(--rose) 30%, var(--rose) 100%);
+  background: radial-gradient(circle,white 0%, var(--Clar2) 30%, var(--Clar2) 100%);
 }
 
 .container{
@@ -96,17 +93,17 @@ section{
   position: relative;
   width: 1.8rem;
   height: 1.8rem;
-  background-color: pink;
+  background-color: rgb(168, 168, 255);
   margin: 0 4px;
   border-radius: 50%;
-  box-shadow: 0 0 0 .8rem rgb(251, 219, 224), 0 0 3rem rgb(255, 73, 103), 0 0 6rem rgb(255, 73, 103);
+  box-shadow: 0 0 0 .8rem rgb(219, 232, 251), 0 0 3rem var(--Esc2), 0 0 6rem var(--Esc);
   animation: animate 15s linear infinite;
   animation-duration: calc(125s / var(--i));
 }
 
 .bubbles span:nth-child(even){
-  background-color: rgb(255, 205, 174);
-  box-shadow: 0 0 0 .8rem rgb(255, 230, 209), 0 0 3rem rgb(255, 212, 179), 0 0 6rem rgb(255, 211, 183);
+  background-color: rgb(194, 194, 194);
+  box-shadow: 0 0 0 .8rem rgb(225, 225, 225), 0 0 3rem rgb(214, 214, 214), 0 0 6rem rgb(242, 242, 242);
 }
 
 @keyframes animate {
@@ -723,7 +720,7 @@ video {
 .register-btn {
   border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(191 63 146 / var(--tw-bg-opacity));
+  background-color: rgb(92 115 242 / var(--tw-bg-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -737,23 +734,22 @@ video {
 
 .register-btn:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(191 4 91 / var(--tw-bg-opacity));
+  background-color: rgb(73 81 242 / var(--tw-bg-opacity));
 }
 
 .register-btn:active {
   --tw-bg-opacity: 1;
-  background-color: rgb(89 2 59 / var(--tw-bg-opacity));
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
 .header {
-  z-index: 0;
   display: flex;
   height: 15vh;
   align-items: center;
   justify-content: space-around;
   border-bottom-width: 2px;
   --tw-border-opacity: 1;
-  border-bottom-color: rgb(251 207 232 / var(--tw-border-opacity));
+  border-bottom-color: rgb(191 219 254 / var(--tw-border-opacity));
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 2rem;
@@ -777,8 +773,6 @@ video {
   font-size: 4.5rem;
   line-height: 1;
   font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(38 1 11 / var(--tw-text-opacity));
 }
 
 @media not all and (min-width: 1280px) {
@@ -809,8 +803,8 @@ video {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background: linear-gradient(to bottom, rgb(255, 133, 153), rgb(255, 255, 255));
-  z-index: 10;
+  background: linear-gradient(to bottom,var(--Esc2), white);
+  z-index: 12;
   margin-bottom: 60px;
 }
 
@@ -827,16 +821,13 @@ video {
 }
 
 .buy_button {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(157 23 77 / var(--tw-bg-opacity));
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  background-color: rgb(92 115 242 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: all;
@@ -846,21 +837,33 @@ video {
 
 .buy_button:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(131 24 67 / var(--tw-bg-opacity));
+  background-color: rgb(73 81 242 / var(--tw-bg-opacity));
+}
+
+.buy_button:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+}
+
+.buy_button {
+  margin: 1rem;
+  border-radius: 0.125rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .email_button {
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 0.375rem;
+  border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(190 24 93 / var(--tw-bg-opacity));
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  background-color: rgb(92 115 242 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: all;
@@ -870,12 +873,25 @@ video {
 
 .email_button:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(131 24 67 / var(--tw-bg-opacity));
+  background-color: rgb(73 81 242 / var(--tw-bg-opacity));
 }
 
 .email_button:active {
   --tw-bg-opacity: 1;
-  background-color: rgb(80 7 36 / var(--tw-bg-opacity));
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+}
+
+.email_button {
+  margin: 1rem;
+  border-radius: 0.125rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .media {
@@ -888,7 +904,7 @@ video {
   --tw-translate-y: -0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-text-opacity: 1;
-  color: rgb(219 39 119 / var(--tw-text-opacity));
+  color: rgb(126 143 242 / var(--tw-text-opacity));
 }
 
 .topic{
@@ -903,31 +919,17 @@ video {
   position: relative;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.right-0 {
-  right: 0px;
+.-bottom-\[240px\] {
+  bottom: -240px;
 }
 
 .z-10 {
   z-index: 10;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .my-8 {
@@ -955,28 +957,12 @@ video {
   height: 875px;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-screen {
   height: 100vh;
 }
 
-.h-\[\] {
-  height: ;
-}
-
-.h-\[90\%\] {
-  height: 90%;
-}
-
 .w-28 {
   width: 7rem;
-}
-
-.w-44 {
-  width: 11rem;
 }
 
 .w-56 {
@@ -987,28 +973,16 @@ video {
   width: 40%;
 }
 
+.w-\[70\%\] {
+  width: 70%;
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[90\%\] {
-  width: 90%;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
-.w-\[70\%\] {
-  width: 70%;
 }
 
 .flex-col {
@@ -1049,18 +1023,22 @@ video {
   margin-bottom: calc(5% * var(--tw-space-y-reverse));
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-sm {
   border-radius: 0.125rem;
 }
 
-.bg-\#rose {
+.bg-Clar2 {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 133 153 / var(--tw-bg-opacity));
+  background-color: rgb(187 195 242 / var(--tw-bg-opacity));
 }
 
-.bg-roseEsc {
+.bg-Esc {
   --tw-bg-opacity: 1;
-  background-color: rgb(38 1 11 / var(--tw-bg-opacity));
+  background-color: rgb(73 81 242 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -1080,10 +1058,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
 }
 
 .font-montserrat {
@@ -1118,19 +1092,10 @@ video {
   line-height: 2.5rem;
 }
 
-.text-roseEsc2 {
-  --tw-text-opacity: 1;
-  color: rgb(89 2 59 / var(--tw-text-opacity));
-}
-
 @media not all and (min-width: 768px) {
   .max-md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .max-md\:hidden {
-    display: none;
   }
 
   .max-md\:h-\[1100px\] {

@@ -6,7 +6,7 @@ section{
 
 .topic::after{
     content: "";
-    background-color: rgb(255, 174, 188);
+    background-color: var(--Esc);
     display: block;
     position: absolute;
     width: 3rem;
@@ -29,8 +29,8 @@ section{
 }
 
 .home{
-    background: linear-gradient(to bottom, rgb(255, 133, 153), rgb(255, 255, 255));
-    z-index: 10;
+    background: linear-gradient(to bottom,var(--Esc2), white);
+    z-index: 12;
     margin-bottom: 60px;
 }
 
@@ -48,7 +48,7 @@ section{
     border-radius: 100% 50%;
     width: 60%;
     height: 100%;
-    background: var(--rose);
+    background: var(--Clar2);
     transform: translate(85%, 60%);
     z-index: 20;
 }
@@ -66,5 +66,5 @@ section{
 }
 
 .perfumes{
-    background: radial-gradient(circle,white 0%, var(--rose) 30%, var(--rose) 100%);
+    background: radial-gradient(circle,white 0%, var(--Clar2) 30%, var(--Clar2) 100%);
 }

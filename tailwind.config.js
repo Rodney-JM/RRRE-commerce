@@ -9,16 +9,14 @@ module.exports = {
       },
       colors:{
         "blackS": "#3B3936",
-        "white1": "#B2BEBF",
+        "white1": "#F2F2F2",
         "white2": "#889C9B",
         "white3": "#486966",
-        "roseEsc": "#26010B",
-        "roseEsc2": "#59023B",
-        "roseNorm": "#BF045B",
-        "roseClar": "#F28DCF",
-        "roseClar2": "#BF3F92",
-        "roseClar3":"#ffafe3",
-        "#rose": "#FF8599"
+        "Esc": "#4951F2",
+        "Esc2": "#5C73F2",
+        "Norm": "#BF045B",
+        "Clar": "#7E8FF2",
+        "Clar2": "#BBC3F2",
       }
     },
   },

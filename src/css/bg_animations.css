@@ -1,3 +1,5 @@
+@import url(colors.css);
+
 .container{
     position: absolute;
     height: 85vh;
@@ -14,17 +16,17 @@
     position: relative;
     width: 1.8rem;
     height: 1.8rem;
-    background-color: pink;
+    background-color: rgb(168, 168, 255);
     margin: 0 4px;
     border-radius: 50%;
-    box-shadow: 0 0 0 .8rem rgb(251, 219, 224), 0 0 3rem rgb(255, 73, 103), 0 0 6rem rgb(255, 73, 103);
+    box-shadow: 0 0 0 .8rem rgb(219, 232, 251), 0 0 3rem var(--Esc2), 0 0 6rem var(--Esc);
     animation: animate 15s linear infinite;
     animation-duration: calc(125s / var(--i));
 }
 
 .bubbles span:nth-child(even){
-    background-color: rgb(255, 205, 174);
-    box-shadow: 0 0 0 .8rem rgb(255, 230, 209), 0 0 3rem rgb(255, 212, 179), 0 0 6rem rgb(255, 211, 183);
+    background-color: rgb(194, 194, 194);
+    box-shadow: 0 0 0 .8rem rgb(225, 225, 225), 0 0 3rem rgb(214, 214, 214), 0 0 6rem rgb(242, 242, 242);
 }
 
 @keyframes animate {

@@ -44,7 +44,7 @@
 
 @layer utilities{
     .input{
-        @apply bg-registerInputElements py-3 px-6 rounded-md placeholder:text-white4;
+        @apply text-white1 outline-none bg-registerInputElements py-3 px-6 rounded-md placeholder:text-white4;
     }
 
     .input_half{
@@ -56,6 +56,6 @@
     }
 
     .register_method{
-        @apply flex items-center justify-center text-white1 px-12 py-3 border-2 border-white2 rounded-md max-sm:px-6
+        @apply flex items-center justify-center text-white1 px-12 py-3 border-2 border-white2 rounded-md max-sm:px-6 ml-4
     }
 }

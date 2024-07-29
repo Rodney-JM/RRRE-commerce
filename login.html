@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RRRecommerce - Login page</title>
+
+
+    <!-- Font importadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./dist/styles.css">
 </head>
 <body>
-    
+    <main class="flex justify-evenly bg-registerBg max-md:flex-col h-screen max-md:h-[1250px] w-full">
+        <section>
+            <img src="./src/assets/icons/logotype (2).png" alt="Perfume" class="bg-cover w-[500px] my-14 mx-auto rounded-sm max-md:my-0">
+        </section>
+        <section class="flex flex-col justify-center items-center p-4">
+            <div class="flex flex-col space-y-4">
+                <div class="flex flex-col space-y-4 mb-8">
+                    <h2 class="text-5xl font-montserrat text-white1 font-medium text-nowrap max-sm:text-4xl">Welcome back!</h2>
+                    <p class="font-montserrat text-white2">Don't have an account? <a href="register.html" class="underline transition-all hover:text-blue-300">Sign up</a></p>
+                </div>
+
+                <form action="" class="flex flex-col mx-auto space-y-6 w-[100%]">
+                    <input type="email" name="email" placeholder="Email" class="input">
+                    <input type="password" name="password" placeholder="Enter your password" class="input">
+                    <button type="submit" class="text-lg bg-Esc2 text-white1 py-2 rounded-md transition-all hover:bg-Esc active:bg-blue-900">
+                        Log in
+                    </button>
+                    <div class="flex justify-between items-center">
+                        <div class="line"></div>
+                        <p class="text-gray-400 text-sm font-palanquin ">Or register with</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="" class="register_method">
+                            <img src="./src/assets/icons/logo_google.png" alt="Google logotype" class="w-10">
+                            Google
+                        </a>
+                        <a href="" class="register_method">
+                            <img src="./src/assets/icons/insta_logo.png" alt="Instagram logotype" class="w-11">
+                            Instagram
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

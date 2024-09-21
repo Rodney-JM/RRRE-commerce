@@ -59,3 +59,27 @@
         @apply flex items-center justify-center text-white1 px-12 py-3 border-2 border-white2 rounded-md max-sm:px-6 ml-4
     }
 }
+
+.error-message{
+    color: rgb(255, 91, 91);
+    margin: 0 auto;
+}
+
+.hidden{
+    display: none;
+}
+
+#preloader{
+    background: white;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#preloader img{
+    width: 600px;
+}

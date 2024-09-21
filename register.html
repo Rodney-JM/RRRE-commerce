@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="./dist/styles.css">
 </head>
 <body>
-    <main class="flex justify-evenly bg-registerBg max-md:flex-col h-screen max-md:h-[1250px] w-full">
+    <main class="flex justify-evenly bg-registerBg h-screen w-full">
+        <div id="preloader hidden">
+            <img id="loader-img" class="hidden" src="./src/assets/icons/preloader.gif" alt="Loader">
+        </div>
         <section class="flex flex-col justify-center items-center p-4">
             <div class="flex flex-col space-y-4">
                 <div class="flex flex-col space-y-4 mb-8">
@@ -25,7 +28,7 @@
                     <p class="font-montserrat text-white2">Already have an account? <a href="login.html" class="underline transition-all hover:text-blue-300">Log in</a></p>
                 </div>
 
-                <form id="register_form" class="flex flex-col mx-auto space-y-6 w-[93%]">
+                <form id="register_form" class="flex flex-col mx-auto space-y-6 w-[93%]" method="post">
                     <div class="space-x-[5%]">
                         <input type="text" name="firstName" placeholder="First name" class="input_half">
                         <input type="text" name="lastName" placeholder="Last name" class="input_half">

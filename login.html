@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./dist/styles.css">
 </head>
 <body>
-    <main class="flex justify-evenly bg-registerBg max-md:flex-col h-screen max-md:h-[1250px] w-full">
+    <main class="flex justify-center bg-registerBg h-screen w-full">
         <section class="flex flex-col justify-center items-center p-4">
             <div class="flex flex-col space-y-4">
                 <div class="flex flex-col space-y-4 mb-8">
@@ -25,12 +25,13 @@
                     <p class="font-montserrat text-white2">Don't have an account? <a href="register.html" class="underline transition-all hover:text-blue-300">Sign up</a></p>
                 </div>
 
-                <form action="" class="flex flex-col mx-auto space-y-6 w-[100%]">
+                <form id="login_form" class="flex flex-col mx-auto space-y-6 w-[100%] "method="post">
                     <input type="email" name="email" placeholder="Email" class="input">
                     <input type="password" name="password" placeholder="Enter your password" class="input">
                     <button type="submit" class="text-lg bg-Esc2 text-white1 py-2 rounded-md transition-all hover:bg-Esc active:bg-blue-900">
                         Log in
                     </button>
+                    <p id="error-message" class="error-message hidden"></p>
                     <div class="flex justify-between items-center">
                         <div class="line"></div>
                         <p class="text-gray-400 text-sm font-palanquin ">Or register with</p>
@@ -50,5 +51,7 @@
             </div>
         </section>
     </main>
+
+    <script src="./src/scripts/login.js"></script>
 </body>
 </html>

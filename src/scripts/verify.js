@@ -30,8 +30,8 @@ form.addEventListener('submit', async (e) => {
             throw new Error("Erro na requisição");
         }
 
-        const data = await response.json();
-        console.log("Resposta do servidor:", data);
+        /* const data = await response.json();
+        console.log("Resposta do servidor:", data);*/
 
         // Redireciona ou realiza outra ação com base na resposta
         window.location.href = "login.html";

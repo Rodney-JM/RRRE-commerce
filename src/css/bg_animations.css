@@ -1,8 +1,9 @@
 @import url(colors.css);
 
 .container{
+    width: 100%;
     position: absolute;
-    height: 85vh;
+    height: 100vh;
     overflow: hidden;
 }
 

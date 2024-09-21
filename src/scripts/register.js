@@ -1,5 +1,8 @@
 const form = document.querySelector("#register_form");
 
+const loaderImg = document.querySelector("#loader-img");
+const loaderContainer = document.querySelector("#preloader");
+
 form.addEventListener('submit', async (e)=>{
     e.preventDefault();
 

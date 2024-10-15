@@ -12,7 +12,7 @@ form.addEventListener('submit', async (e)=>{
 
     console.log(JSON.stringify(formDataObj));
 
-    try{
+    try {
         const response = await fetch("http://localhost:8080/clients", {
             method: "POST",
             headers: {
@@ -20,19 +20,30 @@ form.addEventListener('submit', async (e)=>{
             },
             body: JSON.stringify(formDataObj)
         });
-
-        if(!response.ok){
-            throw new Error("erro na requisição");
+    
+        if (!response.ok) {
+            // Se a resposta não for bem sucedida, lança um erro com o texto da mensagem
+            const errorText = await response.text(); // Pegamos o texto do erro
+            throw new Error(errorText);
         }
-
-        const data = await response.json();
-        console.log("Registro com sucesso: ", data);
+    
+        const data = await response.json();  // Se a resposta for bem sucedida
+        console.log('Cliente registrado com sucesso:', data);
 
         var objetoQualquer = { email: data.email};
         window.localStorage.setItem('userData', JSON.stringify(objetoQualquer));        
 
         window.location.href = "email-signup.html";
-    }catch(error){
-        console.error("erro:", error);
-    }
-});
+    
+    } catch (error) {
+        let errorElements = document.querySelectorAll(".error_message");
+
+        if(errorElements.length == 0){
+            let errorMessage = document.createElement('p');
+            errorMessage.textContent = error.message;
+
+            errorMessage.classList.add('error_message');
+
+            form.appendChild(errorMessage);
+        }
+    }})    

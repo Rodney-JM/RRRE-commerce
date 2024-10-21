@@ -27,15 +27,16 @@
 
                 <form id="register_form" class="flex flex-col mx-auto space-y-6 w-[93%]" method="post">
                     <div class="space-x-[5%]">
-                        <input type="text" name="firstName" placeholder="First name" class="input_half">
-                        <input type="text" name="lastName" placeholder="Last name" class="input_half">
+                        <input type="text" name="firstName" placeholder="First name" class="input_half" required>
+                        <input type="text" name="lastName" placeholder="Last name" class="input_half" required>
                     </div>
-                    <input type="email" name="email" placeholder="Email" class="input">
-                    <input type="password" name="password" placeholder="Enter your password" class="input">
+                    <input type="email" name="email" placeholder="Email" class="input" required>
+                    <input type="password" name="password" placeholder="Enter your password" class="input" required>
                     <button type="submit" class="text-lg bg-Esc2 text-white1 py-2 rounded-md transition-all hover:bg-Esc active:bg-blue-900">
                         Create account
                     </button>
                 </form>
+                
                 <div class="flex justify-between items-center">
                     <div class="line"></div>
                     <p class="text-gray-400 text-sm font-palanquin ">Or register with</p>
@@ -53,6 +54,12 @@
                 </div>
             </div>
         </section>
+        <div id="preloader" class="fixed inset-0 bg-registerBg flex items-center justify-center hidden">
+            <div class="flex flex-col items-center">
+              <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-24 w-24 mb-4"></div>
+              <p class="text-gray-500 text-xl">Loading . . .</p>
+            </div>
+          </div>
     </main>
 
     <script src="./src/scripts/register.js"></script>

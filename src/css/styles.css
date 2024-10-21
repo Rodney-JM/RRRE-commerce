@@ -36,6 +36,10 @@
         @apply transition-all hover:-translate-y-2 hover:text-Clar;
     }
 
+    .error_message{
+        @apply text-red-400 text-center font-medium;
+    }
+
     .topic{
         position: relative;
     }
@@ -58,11 +62,28 @@
     .register_method{
         @apply flex items-center justify-center text-white1 px-12 py-3 border-2 border-white2 rounded-md max-sm:px-6 ml-4;
     }
-
-    .error_message{
-        @apply text-red-400 text-center font-medium;
-    }
 }
 .hidden{
     display: none;
+}
+
+.loader {
+    border-top-color: #7E8FF2;
+    animation: spin 1s linear infinite;
+  }
+  
+  
+@keyframes spin {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+    }
+}
+
+.error_message{
+    color: rgb(255, 88, 88);
+    font-weight: 600;
+    text-align: center;
 }

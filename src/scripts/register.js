@@ -1,6 +1,4 @@
 const form = document.querySelector("#register_form");
-
-const loaderImg = document.querySelector("#loader-img");
 const loaderContainer = document.querySelector("#preloader");
 
 form.addEventListener('submit', async (e)=>{
@@ -12,6 +10,7 @@ form.addEventListener('submit', async (e)=>{
 
     console.log(JSON.stringify(formDataObj));
 
+    loaderContainer.classList.remove("hidden");
     try {
         const response = await fetch("http://localhost:8080/clients", {
             method: "POST",
@@ -36,6 +35,7 @@ form.addEventListener('submit', async (e)=>{
         window.location.href = "email-signup.html";
     
     } catch (error) {
+        loaderContainer.classList.add("hidden")
         let errorElements = document.querySelectorAll(".error_message");
 
         if(errorElements.length == 0){
